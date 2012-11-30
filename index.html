@@ -2,11 +2,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="Améliorer la qualité de son code" />
+    <meta name="author" content="Mathieu Comandon" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
@@ -24,10 +23,6 @@
     <small>
       <em>Mathieu Comandon (@strycore)</em>
     </small>
-  </div>
-
-  <div id="">
-  
   </div>
 
   <div id="why" class="step" data-x="0" data-y="0">
@@ -57,11 +52,11 @@
     </ul>
   </div>
 
-  <div class="step" data-x="2000" data-y="-1000">
+  <div id="delete-your-code" class="step" data-x="2000" data-y="-1000">
     <h2>Supprimez votre code !</h2>
   </div>
 
-  <div class="step" data-x="3000" data-y="-1000">
+  <div id="yagni" class="step" data-x="3000" data-y="-1000">
     <ul>
       <p>
       <q>ça pourra servir pour plus tard</q> <strong>Non !</strong>
@@ -76,8 +71,8 @@
     <small>Votre code est versionné, n'est ce pas ?</small>
   </div>
 
-  <div class="step" data-x="4000" data-y="0">
-    <h2>Tout commence par un bon nommage</h2>
+  <div id="shitty-names" class="step" data-x="4000" data-y="0">
+    <h2>Donner des noms explicites</h2>
     <pre>
     <code class="python">
 def foo(a):
@@ -92,7 +87,7 @@ public int InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButt
     </pre>
   </div>
 
-  <div class="step" data-x="5000" data-y="-2500" data-rotate="-45">
+  <div id="dont-be-bruteforce-cat" class="step" data-x="5000" data-y="-2500" data-rotate="-45">
     <p>Ne soyez pas ce chat</p>
     <img src="images/bruteforcecat.jpg" />
   </div>
@@ -108,27 +103,26 @@ public int InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButt
     </p>
   </div>
   
-  <div class="step" data-x="4000" data-y="1000">
+  <div id="kids-dont-do-NIH" class="step" data-x="4000" data-y="1000">
     <h2>Ne réinventez pas la roue</h2>
     <p>Fuyez le "Not Invented Here"</p>
   </div>
 
-  <div class="step" data-x="4000" data-y="2000">
+  <div id="clone-together-right-now" class="step" data-x="4000" data-y="2000">
     <code>git clone http://github.com/... </code> : 2 secondes <br/>
     <br/>
     écrire sa propre lib : 2 semaines
     <br/>
-    votre code n'est pas meilleur que celui de votre voisin.
-    <br/>
-    contribuez !
+    votre code n'est pas meilleur que celui de votre voisin (et inversement),
+    partagez, contribuez !
   </div>
 
-  <div class="step" data-x="0" data-y="3000">
+  <div id="haha-your-code-is-broken" class="step" data-x="0" data-y="3000">
     <h2>Testez votre code!</h2>
     <q>Code without tests is broken by design.</q> - Jacob
   </div>
   
-  <div class="step" data-x="1000" data-y="3000">
+  <div id="use-whatever-works-for-you" class="step" data-x="1000" data-y="3000">
     <h3>Frameworks de test</h3>
     <h2>python unittest, PHPUnit, Junit, Jasmine, ...</h2>
     <br />
@@ -143,7 +137,7 @@ public int InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButt
     </pre> 
   </div>
 
-  <div class="step" data-x="2000" data-y="3000">
+  <div id="your-tests-run-em" class="step" data-x="2000" data-y="3000">
     <h3>Lancez vos tests souvent</h3>
     <small>(Très souvent)</small>
     <br/>
@@ -162,7 +156,7 @@ OK
     </pre>
   </div>
 
-  <div class="step" data-x="3000" data-y="3000">
+  <div id="jenkins-at-your-service" class="step" data-x="3000" data-y="3000">
     <h3>Lancez vos tests automatiquement</h3>
     <img src="images/jenkins.png" alt="" />
     <pre><code>$ cat .git/hooks/post-commit
@@ -172,7 +166,7 @@ curl http://ci.strycore.com/git/notifyCommit\?url\=/git/project.git
     </code></pre>
   </div>
   
-  <div class="step" data-x="5000" data-y="3000" data-rotate="270">
+  <div id="know-your-enemy" class="step" data-x="5000" data-y="3000" data-rotate="270">
     <h2>Vous êtes votre pire enemi</h2>
     <p>
     Cela demande plus d'effort de concevoir quelque chose de simple que 
@@ -181,7 +175,7 @@ curl http://ci.strycore.com/git/notifyCommit\?url\=/git/project.git
     <img src="images/blueball.gif" />
   </div>
 
-  <div class="step" data-x="5000" data-y="2000" data-rotate="270">
+  <div id="yes-stupid-is-you" class="step" data-x="5000" data-y="2000" data-rotate="270">
     <h1>K.I.S.S</h1>
     <small>(Keep It Simple, Stupid)</small>
     <br/>
@@ -195,7 +189,7 @@ curl http://ci.strycore.com/git/notifyCommit\?url\=/git/project.git
     </p>
   </div>
 
-  <div class="step" data-x="5000" data-y="0" data-rotate="270">
+  <div id="that-s-a-good-time-to-use-a-singleton-NOT" class="step" data-x="5000" data-y="0" data-rotate="270">
     <h2>Pensez à votre application, pas à la technique</h2>
     <p>
       Votre code n'est pas la pour être une démo de la dernière pratique que
@@ -205,7 +199,7 @@ curl http://ci.strycore.com/git/notifyCommit\?url\=/git/project.git
     </p>
   </div>
 
-  <div class="step" data-x="2000" data-y="1000" data-z="-100" data-rotate-x="-45" data-rotate-y="45" data-scale="5">
+  <div id="what-a-great-audience" class="step" data-x="2000" data-y="1000" data-scale="5">
       <h1>Merci !</h1>
       <br/>
       <small>(Questions? Commentaires? Suggestions? Insultes?)</small>
