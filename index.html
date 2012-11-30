@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/monokai.min.css">
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+</head>
+<body class="impress-not-supported">
+<div id="impress">
+
+  <div id="title" class="step" data-x="-1000" data-y="0">
+    <h2>Améliorer la qualité de son code</h2>
+    <small>
+      <em>Mathieu Comandon (@strycore)</em>
+    </small>
+  </div>
+
+  <div id="">
+  
+  </div>
+
+  <div id="why" class="step" data-x="0" data-y="0">
+    <h2>Pourquoi ?</h2>
+    <ul>
+      <li>Pour éviter de payer une dette technique</li>
+      <li>Par respect pour ses collaborateurs</li>
+      <li>Par respect pour soi même</li>
+      <li>Pour développer plus vite !</li>
+      <li>Pour être un bon citoyen du monde Open Source !</li>
+    </ul>
+  </div>
+
+  <div id="zomg" class="step" data-x="0" data-y="-1000">
+    <h2>Ou sinon...</h2>
+    <img src="images/emmett.jpg" alt="" /><br/>
+    <strong>3 ans plus tard ... ZOMG! WTF!</strong>
+  </div>
+
+  <div id="standards" class="step" data-x="1000" data-y="0">
+    <h2>Adoptez un standard de code</h2>
+    <ul>
+      <li>N'inventez pas le votre</li>
+      <li>Utilisez le standard le plus utilisé (Python: PEP8, PHP: PEAR)</li>
+      <li>N'essayez pas d'apprendre le standard par coeur, utilisez un validateur !</li>
+      <li><strong>Dans votre éditeur de texte ! En temps réel !</strong></li>
+    </ul>
+  </div>
+
+  <div class="step" data-x="2000" data-y="-1000">
+    <h2>Supprimez votre code !</h2>
+  </div>
+
+  <div class="step" data-x="3000" data-y="-1000">
+    <ul>
+      <p>
+      <q>ça pourra servir pour plus tard</q> <strong>Non !</strong>
+      </p>
+      <p><q>je garde ça au cas où</q> <strong>Non !</strong></p>
+      <p><q>mais j'ai passé du temps a écrire ça</q> <strong>Tant pis, c'est la vie.</strong></p>
+      <p><q>ce n'est pas moi qui l'ai écrit, je ne peux pas l'effacer</q> <strong>Si !</strong></p>
+    </ul>
+    <p>Moins de code = moins de bugs</p>
+    <img src="images/delete-key.jpg" />
+    <br/>
+    <small>Votre code est versionné, n'est ce pas ?</small>
+  </div>
+
+  <div class="step" data-x="4000" data-y="0">
+    <h2>Tout commence par un bon nommage</h2>
+    <pre>
+    <code class="python">
+def foo(a):
+  lntcf = get_ln_mnf_buf(a)  # LOL WUT?
+    </code>
+    <code class="java">
+/*
+ * Overkill class name
+ */
+public int InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButtonWindowNotFocusedState()
+    </code>
+    </pre>
+  </div>
+
+  <div class="step" data-x="5000" data-y="-2500" data-rotate="-45">
+    <p>Ne soyez pas ce chat</p>
+    <img src="images/bruteforcecat.jpg" />
+  </div>
+
+  <div class="step" data-x="4000" data-y="-2500" data-rotate="45">
+    <p>
+      Pas d'autocomplétion sur votre éditeur ?<br/>
+      <strong>Installez un plugin, ou jettez votre éditeur.</strong>
+      <br/>
+      <small>
+        (Protip: Vim c'est bien)
+      </small>
+    </p>
+  </div>
+  
+  <div class="step" data-x="4000" data-y="1000">
+    <h2>Ne réinventez pas la roue</h2>
+    <p>Fuyez le "Not Invented Here"</p>
+  </div>
+
+  <div class="step" data-x="4000" data-y="2000">
+    <code>git clone http://github.com/... </code> : 2 secondes <br/>
+    <br/>
+    écrire sa propre lib : 2 semaines
+    <br/>
+    votre code n'est pas meilleur que celui de votre voisin.
+    <br/>
+    contribuez !
+  </div>
+
+  <div class="step" data-x="0" data-y="3000">
+    <h2>Testez votre code!</h2>
+    <q>Code without tests is broken by design.</q> - Jacob
+  </div>
+  
+  <div class="step" data-x="1000" data-y="3000">
+    <h3>Frameworks de test</h3>
+    <h2>python unittest, PHPUnit, Junit, Jasmine, ...</h2>
+    <br />
+    <p>Mais aussi...</p>
+    <pre>
+      <code class="python">
+    def test_get_answer():
+        result = get_answer("The universe")
+        if result != 42:
+            print "FAIL"
+      </code>
+    </pre> 
+  </div>
+
+  <div class="step" data-x="2000" data-y="3000">
+    <h3>Lancez vos tests souvent</h3>
+    <small>(Très souvent)</small>
+    <br/>
+    Toutes les 2 secondes par exemple ?
+    <pre>
+      <code>
+$ watch make test
+Every 2.0s: make test            
+
+./manage.py test --failfast --noinput
+......
+--------------------------------------
+Ran 6 tests in 3.318s
+OK
+      </code>
+    </pre>
+  </div>
+
+  <div class="step" data-x="3000" data-y="3000">
+    <h3>Lancez vos tests automatiquement</h3>
+    <img src="images/jenkins.png" alt="" />
+    <pre><code>$ cat .git/hooks/post-commit
+#!/bin/bash
+git push jenkins master
+curl http://ci.strycore.com/git/notifyCommit\?url\=/git/project.git
+    </code></pre>
+  </div>
+  
+  <div class="step" data-x="5000" data-y="3000" data-rotate="270">
+    <h2>Vous êtes votre pire enemi</h2>
+    <p>
+    Cela demande plus d'effort de concevoir quelque chose de simple que 
+    quelquechose qui est voué a devenir trop compliqué.
+    </p>
+    <img src="images/blueball.gif" />
+  </div>
+
+  <div class="step" data-x="5000" data-y="2000" data-rotate="270">
+    <h1>K.I.S.S</h1>
+    <small>(Keep It Simple, Stupid)</small>
+    <br/>
+    <br/>
+    <p>
+    <q>
+     Il semble que la perfection soit atteinte, non quand il n'y a plus rien à
+     ajouter mais quand il n'y a plus rien à retrancher
+    </q><br/>
+    <small><em>Antoine de Saint-Exupéry</em></small>
+    </p>
+  </div>
+
+  <div class="step" data-x="5000" data-y="0" data-rotate="270">
+    <h2>Pensez à votre application, pas à la technique</h2>
+    <p>
+      Votre code n'est pas la pour être une démo de la dernière pratique que
+      vous avez appris.
+      (Design Patterns, Programmation Orientée Objet, etc)<br/>
+      ni de la dernière technologie apprise.
+    </p>
+  </div>
+
+  <div class="step" data-x="2000" data-y="1000" data-z="-100" data-rotate-x="-45" data-rotate-y="45" data-scale="5">
+      <h1>Merci !</h1>
+      <br/>
+      <small>(Questions? Commentaires? Suggestions? Insultes?)</small>
+  </div>
+
+  <div id="overview" class="step" data-x="1000" data-y="1000" data-scale="10">
+  </div>
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
